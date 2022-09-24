@@ -53,6 +53,36 @@ inquirer
 
     ])
 
+
+    .then((data) => {
+
+        const readme = generateREADME(data);
+        fs.writeFile('README.md', readme, (err) =>
+            err ? console.log(err) : console.log('Success!')
+        );
+        console.log(readme);
+    });
+
+
+
+function generateREADME(data) {
+    return `#${data.title}/n,
+    ${data.description}
+    ${data.installation}
+    ${data.usage}
+    ${data.contributors}
+    ${data.testing}
+    If you have any questions regarding this application, email: ${data.email}
+    The repository for this application can be found at: ${data.github}
+    `
+}
+
+
+
+
+
+
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
