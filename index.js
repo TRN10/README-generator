@@ -145,5 +145,9 @@ function renderLicenseLink(data) {
             return 'https://www.isc.org/licenses/';
             break;
 
+        default: // do nothing;
+            break;
+
     }
 }
+
