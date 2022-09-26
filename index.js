@@ -49,6 +49,23 @@ inquirer
             message: 'what is your email address?',
 
         },
+        {
+            type: 'input',
+            name: 'screenshot',
+            message: 'add path to screenshot in your assets folder',
+        },
+        {
+            type: 'input',
+            name: 'url',
+            message: 'what is the url of the deployed application?'
+
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Which of the following licenses would you like to apply to your project?',
+            choices: ['no license', 'MIT License', 'Apache Licence 2.0', 'GNU GPLv3 License', 'ISC License'],
+        },
 
 
     ])
@@ -66,14 +83,25 @@ inquirer
 
 
 function generateREADME(data) {
-    return `#${data.title}/n,
-    ${data.description}
-    ${data.installation}
-    ${data.usage}
-    ${data.contributors}
-    ${data.testing}
-    If you have any questions regarding this application, email: ${data.email}
-    The repository for this application can be found at: ${data.github}
+    return `
+# ${data.title}
+
+${data.description}
+
+${data.installation}
+
+${data.usage} 
+
+${data.contributors}
+
+${data.testing}  
+
+If you have any questions regarding this application, email: ${data.email}  
+
+Below is a screenshot of the application:
+![${data.title}-screenshot](${data.screenshot})
+
+The repository for this application can be found at: ${data.github}
     `
 }
 
@@ -91,3 +119,31 @@ function init() { }
 
 // Function call to initialize app
 init();
+
+
+
+function renderLicenseLink(data) {
+    const licenseLink = data.license;
+    switch (licenseLink) {
+        case 'no license':
+            return "";
+            break;
+
+        case 'MIT License':
+            return 'https://opensource.org/licenses/MIT';
+            break;
+
+        case 'Apache Licence 2.0':
+            return 'https://www.apache.org/licenses/LICENSE-2.0';
+            break;
+
+        case 'GNU GPLv3 License':
+            return 'https://www.gnu.org/licenses/gpl-3.0.en.html';
+            break;
+
+        case 'ISC License':
+            return 'https://www.isc.org/licenses/';
+            break;
+
+    }
+}
