@@ -67,14 +67,11 @@ function renderLicenseSection(license) {
 
     case 'GNU GPLv3 License':
       return `This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-      
       This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-      
       You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.`;
 
     case 'ISC License':
       return `Permission to use, copy, modify, and /or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
-
       THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`;
 
     case 'no license':
@@ -84,25 +81,25 @@ function renderLicenseSection(license) {
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
 
 ${data.description}
 
-## Installation
+### Installation
 
 ${data.installation}
 
-## Usage
+### Usage
 
 ${data.usage}
 
-## Credits
+### Credits
 
 ${data.collaborators}
 
-## Licenses
+### Licenses
 
 Copyright ${data.year} ${data.fullname}
 ${renderLicenseSection(data.license)}
@@ -111,15 +108,14 @@ ${renderLicenseBadge(data.license)}
 
 [${data.license}](${renderLicenseLink(data.license)})
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---
 
-## How to Contribute
+#### How to Contribute
 
 ${data.contribute}
 
-## Tests
+#### Tests
 
 ${data.testing}
 
@@ -128,37 +124,16 @@ If you have any questions regarding this application, please email: ${data.email
 Below is a screenshot of the application:
 ![${data.title}-screenshot](${data.screenshot})
 
-The repository for this application can be found at: ${data.github}
+##### The repository for this application can be found at: 
 
+'https://github.com/${data.github}'
 
+##### The deployed application can be found at: 
+
+${data.url}
 `;
 }
 
 module.exports = generateMarkdown;
 
-
-// function generateREADME(data) {
-//   return `
-// # ${data.title}
-
-// ${data.description}
-
-// ${data.installation}
-
-// ${data.usage} 
-
-// ${data.contribute}
-
-// ${data.testing}  
-
-// If you have any questions regarding this application, email: ${data.email}  
-
-// Below is a screenshot of the application:
-// ![${data.title}-screenshot](${data.screenshot})
-
-// The repository for this application can be found at: ${data.github}
-
-// [Link to licence](${renderLicenseLink(data.license)})
-//   `
-// }
 

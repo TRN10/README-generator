@@ -99,57 +99,8 @@ function init() {
     })
 }
 
+
 // Function call to initialize app
 init();
 
 
-
-// function renderLicenseLink(license) {
-//     // const licenseLink = data.license;
-//     switch (license) {
-//         case 'MIT License':
-//             return 'https://opensource.org/licenses/MIT';
-
-//         case 'Apache Licence 2.0':
-//             return 'https://www.apache.org/licenses/LICENSE-2.0';
-
-//         case 'GNU GPLv3 License':
-//             return 'https://www.gnu.org/licenses/gpl-3.0.en.html';
-
-//         case 'ISC License':
-//             return 'https://www.isc.org/licenses/';
-
-//         case 'no license':
-//         default:
-//             return "";
-//     }
-// }
-
-// function renderLicenseLink(data) {
-//     // const licenseLink = data.license;
-//     let licenseLink;
-//     switch (data.license) {
-
-//         case 'MIT License':
-//             licenseLink = 'https://opensource.org/licenses/MIT';
-//             break;
-
-//         case 'Apache Licence 2.0':
-//             licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0';
-//             break;
-
-//         case 'GNU GPLv3 License':
-//             licenseLink = 'https://www.gnu.org/licenses/gpl-3.0.en.html';
-//             break;
-
-//         case 'ISC License':
-//             licenseLink = 'https://www.isc.org/licenses/';
-//             break;
-//         case 'no license':
-//         default: // do nothing;
-//             licenseLink = "";
-//             break;
-//     }
-
-//     return licenseLink;
-// }
