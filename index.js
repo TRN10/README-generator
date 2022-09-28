@@ -69,7 +69,19 @@ const questions = [
         name: 'license',
         message: 'Which of the following licenses would you like to apply to your project?',
         choices: ['no license', 'MIT License', 'Apache Licence 2.0', 'GNU GPLv3 License', 'ISC License'],
-    }];
+    },
+    {
+        type: 'input',
+        name: 'year',
+        message: 'what is the current year?'
+    },
+    {
+        type: 'input',
+        name: 'fullname',
+        message: 'please enter your full name as you wish it to appear in the chosen license'
+
+    },
+];
 
 
 
@@ -85,7 +97,6 @@ function init() {
         writeToFile('README.md', generateMarkdown({ ...qResponses }));
 
     })
-
 }
 
 // Function call to initialize app
