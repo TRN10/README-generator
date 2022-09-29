@@ -2,7 +2,7 @@
 
 ## Coding Bootcamp week 09 challenge
 
-This is a command line application which creates a README md file for the user based on a series of prompts in the command line. The user initialises the application by typing node index.js in the terminal command line. The user is then presented with a series of prompts to obtain the information required to create the README file. After entering all the required inputs the application will generate a README md document which will be written to the output folder within the application folder. The README will be include badges for the required license, a screenshot of the application, and links to the deployed application and Github repository.
+This is a command line application which creates a README md file for the user based on a series of prompts in the command line. The user initialises the application by typing node index.js in the terminal command line. The user is then presented with a series of prompts to obtain the information required to create the README file. After entering all the required inputs the application will generate a README md document which will be written to the output folder within the application folder. The README will include badges for the required license, a screenshot of the application, and links to the deployed application and Github repository.
 This is the first challenge I have created using node.js and the first time I have used inquirer. This has been a consolidation of all the back-end concepts that have been introduced in the past week.
 
 ### Installation
