@@ -1,64 +1,24 @@
-# sdf [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  - [Title](#title)
-  + [Description](#description)
-  + [Installation](#installation)
-  + [Usage](#usage)
-  + [Credits](#credits)
-  + [Licenses](#licenses)
-    - [How to Contribute](#how-to-contribute)
-    - [Tests](#tests)
-      * [The repository for this application can be found at:](#the-repository-for-this-application-can-be-found-at-)
-      * [The deployed application can be found at:](#the-deployed-application-can-be-found-at-)
+# README generator
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+## Coding Bootcamp week 09 challenge
 
-### Description
-
-sdf
+This is a command line application which creates a README md file for the user based on a series of prompts in the command line. The user initialises the application by typing node index.js in the terminal command line. The user is then presented with a series of prompts to obtain the information required to create the README file. After entering all the required inputs the application will generate a README md document which will be written to the output folder within the application folder. The README will be include badges for the required license, a screenshot of the application, and links to the deployed application and Github repository.
+This is the first challenge I have created using node.js and the first time I have used inquirer. This has been a consolidation of all the back-end concepts that have been introduced in the past week.
 
 ### Installation
 
-sdfsdf
+The user is required to type 'npm install' in the command line to install requried node modules. The application is then initialised in the terminal by the command 'node index.js'.
 
 ### Usage
 
-sdf
-
-### Credits
-
-sdf
-
-### Licenses
-
-Copyright 2022 TJJ
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-      The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
-      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[MIT License](https://opensource.org/licenses/MIT)
-
-
----
-
-#### How to Contribute
-
-sdfsdf
-
-#### Tests
-
-sdf
-
-If you have any questions regarding this application, please email: sdfsdf  
-
-Below is a screenshot of the application:
-![sdf-screenshot](asdf)
+This application generates a markdown README file based on the users inputs. The README file is written to the output folder in the README-generator application folder.
 
 ##### The repository for this application can be found at: 
 
-'https://github.com/sdfa'
+https://github.com/TRN10/README-generator
 
-##### The deployed application can be found at: 
+##### A screen recording displaying the functionality of the application can be found at:
 
-asdf
+https://drive.google.com/file/d/18HBPI2QWn4h6MnTXk7gm2qzyOMDDZk24/view
+
+
