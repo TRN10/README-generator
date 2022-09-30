@@ -19,6 +19,6 @@ https://github.com/TRN10/README-generator
 
 ##### A screen recording displaying the functionality of the application can be found at:
 
-https://drive.google.com/file/d/18HBPI2QWn4h6MnTXk7gm2qzyOMDDZk24/view
+https://drive.google.com/file/d/1fiTa1XBgmH0gxiX_-FNccSnglEqDSVGC/view
 
 
